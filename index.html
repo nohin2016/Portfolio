@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico/favicon-16x16.png">
+  <title>Portfoli Web-site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header" style="background-image: url('images/bg-img.jpg')">
+    <div class="container">
+      <nav class="menu">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+          
+        <button type="button" class="header__burger">
+          <span class="header__burger-lines"></span>
+          <span class="sr-only">Menu btn</span>
+        </button>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#about">
+              About me
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#skills">
+              Skills
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#services">
+              Services
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#clients">
+              Reviews
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contacts">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1 class="hero__title">
+          <span class="hero__name">
+            Hello, I am Mykhailo Nohin
+          </span>
+          frontend -
+          developer
+        </h1>
+        <a class="hero__link" href="#portfolio">
+          watch works
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="title">
+          About me
+        </h2>
+        <div class="about__inner">
+          <p>
+            Welcome to my website! My name is Ivan, I am from Kyiv. I have been doing front-end development for over a year. Before development, I was doing something I didn't like, I went to a job I didn't like, I couldn't figure out what to do to bring pleasure and money, until I came across one interesting course.
+          </p>
+          <p>
+            Since then, I have been through fire, water and copper pipes. Learning was different: somewhere easier, somewhere more difficult. Daily work on skills and the diligence with which I approached learning, after a few months brought fruits - I took my first order as a freelancer. You can read customer reviews and examples of work below.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="title">
+          Skills
+        </h2>
+        <div class="skills__inner">
+          <img class="skills__img" src="images/skill-img.jpg" alt="Парень с пальцами вверх">
+          <ul class="skills__list">
+            <li class="skills__list-item">
+              html
+              <div class="skills__bar">
+                <div class="skills__progress" style="width: 88%"></div>
+              </div>
+            </li>
+            <li class="skills__list-item">
+              css
+              <div class="skills__bar">
+                <div class="skills__progress" style="width: 83%"></div>
+              </div>
+            </li>
+            <li class="skills__list-item">
+              js
+              <div class="skills__bar">
+                <div class="skills__progress" style="width: 63%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="title">
+          Services
+        </h2>
+        <ul class="services__list">
+          <li class="services__item services__item--code">
+            <h3 class="services__subtitle">
+              Project layout
+            </h3>
+            <p class="services__text">
+              I will make a high-quality layout of your project based on the provided layout or example
+            </p>
+          </li>
+          <li class="services__item services__item--dev">
+            <h3 class="services__subtitle">
+              Landing on CMS
+            </h3>
+            <p class="services__text">
+              I will integrate your project into one of the popular CMS
+            </p>
+          </li>
+          <li class="services__item services__item--support">
+            <h3 class="services__subtitle">
+              Site support
+            </h3>
+            <p class="services__text">
+              I guarantee support for your site for 30 days after the project is delivered.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="title">
+          My works
+        </h2>
+
+        <ul class="portfolio__filter-btn">
+          <li class="portfolio__filter">
+            <button class="portfolio__btn" type="button" data-filter="all">
+              All works
+            </button>
+          </li>
+          <li class="portfolio__filter">
+            <button class="portfolio__btn" type="button" data-filter=".category-a">
+              Landing
+            </button>
+          </li>
+          <li class="portfolio__filter">
+            <button class="portfolio__btn" type="button" data-filter=".category-b">
+              Corporate
+            </button>
+          </li>
+          <li class="portfolio__filter">
+            <button class="portfolio__btn" type="button" data-filter=".category-c">
+              E-commerce
+            </button>
+          </li>
+        </ul>
+
+        <ul class="portfolio__items">
+          <li class="portfolio__items-img mix category-a">
+            <img src="images/portfolio/1.jpg" alt="Город">
+          </li>
+          <li class="portfolio__items-img mix category-b">
+            <img src="images/portfolio/3.jpg" alt="Мост и река">
+          </li>
+          <li class="portfolio__items-img mix category-c">
+            <img src="images/portfolio/5.jpg" alt="Синий мост">
+          </li>
+          <li class="portfolio__items-img mix category-a">
+            <img src="images/portfolio/2.jpg" alt="Город на реке">
+          </li>
+          <li class="portfolio__items-img mix category-b">
+            <img src="images/portfolio/4.jpg" alt="Пляж">
+          </li>
+          <li class="portfolio__items-img mix category-c">
+            <img src="images/portfolio/6.jpg" alt="Скала">
+          </li>
+        </ul>
+
+        <button class="btn" type="button">
+          Download more
+        </button>
+
+      </div>
+    </section>
+
+    <section class="clients section" id="clients">
+      <div class="container">
+        <h2 class="title">
+          Customer Reviews
+        </h2>
+        <div class="clients__inner">
+          <blockquote class="blockquote">
+            <img class="blockquote__icon" src="images/blockquote-img.jpg" alt="Марк Цукерберг">
+            <cite class="blockquote__author">
+              Mark Zuckerberg
+            </cite>
+            Fantastic! I am completely satisfied 
+            with the work of this specialist.
+            Fast and high-quality. I recommend!
+          </blockquote>
+          <a data-fancybox class="blockquote__video-link" style="background-image: url('images/video.jpg')"
+            href="https://www.youtube.com/watch?v=ZgaYc2femJ4&t=531s">
+            <span class="sr-only">
+              Video review of Facebook review
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="container">
+        <ul class="stats__list">
+          <li class="stats__item stats__item--works">
+            <p class="stats__text">
+              Completed works
+            </p>
+            <span class="stats__item-num">
+              56
+            </span>
+          </li>
+          <li class="stats__item stats__item--clients">
+            <p class="stats__text">
+              Satisfied customers
+            </p>
+            <span class="stats__item-num">
+              46
+            </span>
+          </li>
+          <li class="stats__item stats__item--cofee">
+            <p class="stats__text">
+              Cups of coffee drunk
+            </p>
+            <span class="stats__item-num">
+              477
+            </span>
+          </li>
+          <li class="stats__item stats__item--reviews">
+            <p class="stats__text">
+              Total reviews
+            </p>
+            <span class="stats__item-num">
+              48
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <h2 class="title">
+          Contacts
+        </h2>
+        <div class="contacts__items">
+          <address class="contacts__inner">
+            <div class="contact__info">
+              <p class="contact__text">
+                You can contact me using the contact form, or directly by phone number, email, in social networks:
+              </p>
+              <ul class="contact">
+                <li class="contact__item">
+                  <a class="contact__link" href="tel:+380501111111">
+                    +48 722 754 705
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link" href="mailto:frontend-monster@email.com">
+                    supermishanyssna@gmail.com
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" style="background-image: url('images/instagram.svg');" href="#">
+                    <span class="sr-only">
+                      Instagram
+                    </span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" style="background-image: url('images/facebook.svg');" href="#">
+                    <span class="sr-only">
+                      Facebook
+                    </span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" style="background-image: url('images/telegram.svg');" href="#">
+                    <span class="sr-only">
+                      Telegram
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+
+          <form class="form" action="#">
+            <div class="form__top">
+              <label class="form__label form__label--name">
+                You'r name
+                <input class="form__field" type="text" name="username" required minlength="3" maxlength="14"
+                  placeholder="Alex">
+              </label>
+              <label class="form__label">
+                Phone number
+                <input class="form__field" type="tel" name="phone" required minlength="7" maxlength="15"
+                  placeholder="+48 001 001 007">
+              </label>
+            </div>
+            <label class="form__label form__label--textarea">
+              You'r message
+              <textarea class="form__field form__field--textarea" name="comment"
+                placeholder="The text of your message"></textarea>
+              </label>
+              <button class="btn form__btn" type="submit">
+                Send
+              </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#">
+      <img class="logo__img footer__img" src="images/logo.svg" alt="Логотип">
+    </a>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
